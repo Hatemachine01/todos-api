@@ -13,8 +13,8 @@
 ActiveRecord::Schema.define(version: 20170920000437) do
 
   create_table "todos", force: :cascade do |t|
-    t.string "title"
-    t.string "created_by"
+    t.string "text"
+    t.boolean "done", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
